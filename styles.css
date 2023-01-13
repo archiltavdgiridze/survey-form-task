@@ -1,0 +1,219 @@
+:root {
+  --font: 'Urbanist', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+}
+
+br {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid red;
+}
+
+.title h1,
+.title p {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.title p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 95%;
+  margin: auto auto 70px auto;
+}
+
+#survey-form {
+  background-color: #bce5ffbc;
+  padding: 3em;
+  border-radius: 10px;
+}
+
+/* ~ shared css */
+.recommend-radio p,
+.dropdown p,
+.checkbox p,
+.textarea p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 0 0;
+}
+
+.input-info,
+.recommend-radio,
+.dropdown,
+.checkbox,
+.textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.label-input-div,
+.checkbox-input-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ~ */
+
+/* ~ input info */
+.input-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 0 5px 0;
+}
+
+#name-label {
+  padding-top: 0;
+}
+
+/* ~ recommend radio */
+.recommend-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input-div input {
+  margin: 0 10px 0 0;
+}
+
+/* ~ checkbox */
+.checkbox-input-label input {
+  margin: 0 10px 0 0;
+}
+
+/* ~ textarea */
+.textarea button {
+  margin: 1rem 0 0;
+  height: 50px;
+  background-color: gainsboro;
+}
+
+/* ~ media queries */
+
+@media screen and (min-width: 20px) {
+
+  #survey-form {
+    padding: 1em;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title p {
+    font-size: 1.25rem;
+  }
+
+  .recommend-radio p,
+  .dropdown p,
+  .checkbox p,
+  .textarea p {
+    font-size: 1.3rem;
+  }
+
+  .label-input-div,
+  .checkbox-input-label {
+    flex-direction: row;
+  }
+
+  .label-input-div input,
+  .checkbox-input-label input {
+    margin: 0 10px 0 0;
+  }
+
+  .label-input-div label,
+  .checkbox-input-label label {
+    font-size: 1.2rem;
+  }
+
+  .textarea button {
+    margin: 1rem 0 0;
+    height: 50px;
+    background-color: gainsboro;
+  }
+}
+
+@media screen and (min-width: 425px) {
+
+  #survey-form {
+    padding: 1.5em;
+  }
+
+@media screen and (min-width: 768px) {
+  #survey-form {
+    padding: 2em;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title p {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    max-width: 80%;
+  }
+
+  #name-label,
+  #email-label,
+  #number-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 0 5px 0;
+  }
+
+  .recommend-radio p,
+  .dropdown p,
+  .checkbox p,
+  .textarea p {
+    font-size: 1.5rem;
+  }
+
+  .label-input-div,
+  .checkbox-input-label {
+    flex-direction: row;
+  }
+
+  .label-input-div input,
+  .checkbox-input-label input {
+    margin: 0 10px 0 0;
+  }
+
+  .label-input-div label,
+  .checkbox-input-label label {
+    font-size: 1.3rem;
+  }
+
+  .textarea button {
+    margin: 1rem 0 0;
+    height: 50px;
+    background-color: gainsboro;
+  }
+}
